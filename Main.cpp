@@ -98,7 +98,7 @@ void newGame(sf::RenderWindow* window)
 int main()
 {
 	sf::Texture Texture1_;
-	Texture1_.loadFromFile("Image\\snow.PNG");
+	Texture1_.loadFromFile("Image\\dead.png");
 	sf::Sprite Sprite1_(Texture1_);
 
 	sf::Music music;
@@ -131,6 +131,7 @@ int main()
 			newGame(&window);	
 			while (true)
 			{ 
+				window.clear();
 				window.draw(Sprite1_);
 				window.display();
 				if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
